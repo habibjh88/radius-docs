@@ -1,0 +1,33 @@
+{
+  "name": "radiustheme/radius-docs",
+  "description": "RadiusTheme Docs WordPress theme",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Starter"
+  ],
+  "homepage": "https://github.com/radiustheme",
+  "license": "GPL-3.0",
+  "version": "4.0.0",
+  "authors": [
+    {
+      "name": "radiustheme",
+      "email": "support@radiustheme.com",
+      "homepage": "https://radiustheme.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RT\\RadiusDocs\\": "./inc"
+    },
+    "files": [
+      "./inc/template-tags.php"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": false
+    }
+  }
+}

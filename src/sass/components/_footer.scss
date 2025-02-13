@@ -1,0 +1,40 @@
+@use '../abstract' as *;
+
+@forward 'parts/_footer-nav';
+@forward 'parts/_footer-widgets';
+@forward "parts/_footer-copyright";
+
+//Footer layout
+@forward "parts/_footer-1";
+@forward "parts/_footer-2";
+@forward "parts/_footer-3";
+
+/* Site Footer
+***************************/
+.site-footer {
+	position: relative;
+	z-index: 1;
+	border-top: 1px solid $border_color;
+
+	.footer-container {
+		position: relative;
+		z-index: 1;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.footer-sidebar {
+	ul {
+		li {
+			margin-bottom: 0;
+			padding-bottom: 8px;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+@use '../../abstract' as *;
+/* Off canvas drawer */
+.radius-docs-offcanvas-drawer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100vh;
+    padding: 40px;
+    width: $nav_drawer_width;
+    margin-left: - $nav_drawer_width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $body_bg_color;
+    color: $body_color;
+    z-index: 99999;
+    box-sizing: border-box;
+    transition: 0.4s ease-in-out;
+    max-width: 100%;
+    overflow: auto;
+
+    &.is-open {
+        margin-left: 0;
+    }
+
+    .offcanvas-logo {
+        .dowp-site-logo {
+            display: none !important;
+        }
+
+        .site-mobile-logo {
+            display: block !important;
+        }
+
+        img {
+            max-width: 160px;
+            height: auto;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 8px 40px 8px 0;
+        display: block;
+        position: relative;
+        font-size: $base_fs;
+        font-weight: 600;
+        color: $title_color;
+        line-height: 1.3;
+
+        &:hover {
+            color: $primary_color;
+        }
+    }
+
+    ul li.current-menu-item > a,
+    ul li.current-menu-ancestor > a {
+        color: $primary_color;
+    }
+
+    .caret {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $gray10;
+        border-radius: 50%;
+        color: $title_color;
+        transition: 0.4s;
+
+        &:hover {
+            background: $primary_color;
+            color: $white_color;
+        }
+
+        i {
+            color: currentColor;
+            transition: none;
+        }
+    }
+
+    ul > li {
+        &.is-open {
+            > a > .caret {
+                > i {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    ul ul {
+        padding-left: 30px;
+    }
+
+    .offcanvas-navigation li > ul {
+        display: none;
+    }
+
+    .offcanvas-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .trigger-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            font-size: 26px;
+            cursor: pointer;
+            color: $button_color;
+            background: $primary_color;
+            opacity: .8;
+            border-radius: 50%;
+            z-index: 1;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.radius-docs-body-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: 99990;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.radius-docs-offcanvas-drawer.is-open + .radius-docs-body-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.offcanvas-address {
+    margin-top: auto;
+
+    label {
+        display: block;
+        color: $title_color;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .offcanvas-info {
+        margin-bottom: 24px;
+
+        li {
+            display: flex;
+            align-items: baseline;
+            column-gap: 8px;
+            margin-bottom: 10px;
+            color: $body_color;
+        }
+
+        a {
+            color: $body_color;
+
+            &:hover {
+                color: $primary_color;
+            }
+        }
+
+    }
+
+    .offcanvas-social-icon {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 7px;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 38px;
+            width: 38px;
+            border-radius: 38px;
+            border: 1px solid $border_color;
+            color: $meta_color;
+            overflow: hidden;
+            &:hover {
+                background: $primary_color;
+				color: $white_color;
+            }
+        }
+    }
+}

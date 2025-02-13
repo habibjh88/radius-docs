@@ -1,0 +1,22 @@
+/* Blog Card CSS
+===============================*/
+
+.layout-left-sidebar #sidebar {
+	order: -1;
+}
+
+.radius-docs-widget-area .widget-title {
+	margin-top: -8px;
+}
+
+.blog-post-card.archive-post {
+	&.col-lg-12,
+	&.col-12 {
+		margin-bottom: 50px;
+
+		.entry-title {
+			font-size: 26px;
+		}
+	}
+
+}

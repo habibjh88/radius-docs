@@ -1,0 +1,20 @@
+// Doc Details Page
+$primary_color: #3b2ce1;
+.radius-docs-theme {
+    .betterdocs-search-layout-1 {
+        align-items: center;
+        background-color: $primary_color !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 57px auto 0;
+        max-width: 100%;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .betterdocs-single-layout-4 {
+
+    }
+}

@@ -1,0 +1,132 @@
+@use '../../abstract' as *;
+// Menu icon style
+
+.menu-icon-wrapper {
+	.radius-docs-user-login {
+		a {
+			color: $title_color;
+			font-weight: 600;
+
+			&:hover {
+				color: $primary_color;
+			}
+		}
+	}
+
+	@media (min-width: 1025px) {
+		.no-hamburger {
+			display: none;
+		}
+	}
+
+	.ham_burger {
+		width: 52px;
+		height: 52px;
+		margin: 0 -13px;
+
+		path {
+			stroke: $title_color;
+		}
+
+		&:hover path {
+			stroke: $primary_color;
+		}
+	}
+
+	a {
+		display: flex;
+		justify-content: center;
+
+		&.btn {
+			@media(max-width: 480px) {
+				padding: 10px;
+			}
+		}
+	}
+
+	ul li {
+		list-style: none;
+		margin-bottom: 0;
+		position: relative;
+	}
+
+	[class*=raw-icon] {
+		font-size: 20px;
+		color: $title_color
+	}
+
+	a:hover i,
+	a:hover svg {
+		color: $primary_color;
+	}
+
+	ul.has-separator {
+		gap: 13px;
+
+		& {
+			@media(max-width: 480px) {
+				gap: 5px;
+			}
+		}
+	}
+	li [class*=raw-icon] {
+		transition: 0.4s;
+	}
+
+	li.radius-docs-button {
+		padding-left: 0;
+		padding-right: 0;
+
+		.btn {
+			height: 36px;
+			font-size: 14px;
+			padding: 0 20px;
+			border: 1px solid $meta_light;
+			border-radius: 30px;
+			background: $white_color;
+			&:hover {
+				color: $white_color;
+				background: $primary_color;
+				border-color: $primary_color;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: none;
+		}
+
+		@media (max-width: 560px){
+			display: none;
+		}
+	}
+
+	.has-separator li {
+
+		&:not(:last-child) {
+			padding-right: 14px;
+
+			&:after {
+				content: "";
+				position: absolute;
+				right: 0;
+				width: 1px;
+				height: 23px;
+				background: $meta_color;
+				top: 50%;
+				transform: translateY(-50%);
+				opacity: .4;
+			}
+		}
+
+		&.button-prev {
+			padding-right: 0;
+
+			&::after {
+				content: none;
+			}
+		}
+
+	}
+
+}

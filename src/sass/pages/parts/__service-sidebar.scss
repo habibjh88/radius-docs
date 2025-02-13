@@ -1,0 +1,99 @@
+@use '../../abstract' as *;
+// Service Sidebar
+.service-sidebar-menu,
+.service-sidebar-menu2{
+	.radius-docs-navigation {
+		display: block;
+	}
+}
+.radius-docs-service-sidebar,
+.service-sidebar-menu {
+	background-color: $gray10;
+	border-radius: 16px;
+	padding: 40px;
+	@media(max-width: 575px) {
+		padding: 30px;
+	}
+}
+.radius-docs-service-sidebar, .service-sidebar-menu, .service-sidebar-menu2 {
+	ul.menu,
+	.radius-docs-navbar {
+		li {
+			+ li {
+				margin-top: 7px;
+			}
+			a {
+				position: relative;
+				display: block;
+				background-color: $body_bg_color;
+				border: 1px solid $border_color;
+				border-radius: 6px;
+				padding: 22px 26px;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 22px;
+				z-index: 1;
+				&:after {
+					position: absolute;
+					right: 24px;
+					font-size: 12px;
+					font-weight: 500;
+					content: "\e858";
+					font-family: "radius-docs-fontello";
+				}
+				&:before {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background-color: $primary_color;
+					border-radius: 6px;
+					color: $button_color;
+					bottom: 0;
+					left: 0;
+					transition: all 0.3s ease-in-out;
+					visibility: hidden;
+					opacity: 0;
+					z-index: -1;
+				}
+				&:hover {
+					color: $button_color;
+					border: 1px solid transparent;
+					&:before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+	.frm-fluent-form {
+		.ff-el-input--label {
+			display: none;
+		}
+		.ff-el-form-control {
+			font-size: 15px;
+		}
+		input {
+			height: 55px;
+		}
+		.ff-btn-submit {
+			font-size: $base_fs;
+			font-weight: 700;
+			width: 100%;
+			padding: 18px 30px;
+			border-radius: 6px;
+			letter-spacing: 0.5px;
+			background-color: $primary_color;
+			color: $button_color;
+			&:hover {
+				background-color: $secondary_color;
+				color: $button_color;
+			}
+		}
+		.ff-el-form-check-label {
+			font-size: 15px;
+			line-height: 1.6;
+		}
+	}
+}

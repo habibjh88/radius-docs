@@ -1,0 +1,106 @@
+@use '../abstract' as *;
+/* Transparent Header
+***************************/
+
+.has-trheader {
+	#radius-docs-sticky-placeholder {
+		height: 0 !important;
+	}
+	.radius-docs-breadcrumb-wrapper *,
+	.radius-docs-breadcrumb-wrapper .breadcrumb-area *,
+	.site-header .site-branding a,
+	.site-header .radius-docs-navigation a,
+	.site-header .menu-icon-wrapper .radius-docs-hamburger,
+	.site-header .menu-icon-wrapper li:not(.radius-docs-button) a,
+	.site-header .radius-docs-navigation ul li a {
+		color: $transparent_menu_color !important;
+	}
+
+	.site-header .menu-icon-wrapper li:not(.radius-docs-button) a:hover,
+	.site-header .menu-icon-wrapper a:hover .raw-icon-search,
+	.site-header .site-branding a:hover,
+	.site-header .menu-icon-wrapper .radius-docs-hamburger:hover,
+	.site-header .radius-docs-navigation a:hover {
+		color: $transparent_menu_hover !important;
+	}
+
+	&.has-menu-shadow.no-banner .site-header::before,
+	&.has-menu-shadow.has-banner .radius-docs-breadcrumb-wrapper::after {
+		content: "";
+		background: rgba(0, 0, 0, 0);
+		background: -webkit-linear-gradient(top, rgb(0 0 0 / 58%) 0%, rgba(0, 0, 0, 0) 100%);
+		background: linear-gradient(to bottom, rgb(0 0 0 / 68%) 0%, rgba(0, 0, 0, 0) 100%);
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 268px;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	.site-header {
+		position: absolute;
+		width: 100%;
+		z-index: 999;
+		color: $white_color;
+
+		.main-header-section:not(.radius-docs-sticky .main-header-section) {
+			background: none !important;
+		}
+
+		.radius-docs-navigation ul li.current-menu-item > a,
+		.radius-docs-navigation ul li.current-menu-ancestor > a {
+			color: $transparent_menu_hover;
+		}
+
+		.radius-docs-navigation ul li a i {
+			opacity: 0.7;
+		}
+
+		.radius-docs-topbar .caret i,
+		.main-header-section .caret i {
+			width: 9px;
+			height: 9px;
+		}
+
+		.radius-docs-navigation ul > li > ul {
+			background-color: rgba($title_rgb, 0.9);
+		}
+		.radius-docs-navigation ul li.mega-menu > ul.dropdown-menu ul {
+			background: none !important;
+		}
+
+		.radius-docs-navigation ul > li > ul li > a:hover {
+			background-color: transparent;
+			color: $primary_light;
+		}
+
+		.menu-icon-wrapper i {
+			color: currentColor;
+		}
+
+		.menu-icon-wrapper .has-hamburger i {
+			color: currentColor;
+		}
+
+		.menu-icon-wrapper .has-separator li::after {
+			background: $transparent_menu_color;
+			opacity: .5;
+		}
+	}
+
+	.radius-docs-sticky .main-header-section {
+		background: rgba($title_rgb, 0.94);
+	}
+}
+
+
+.radius-docs-sticky ~ .site-content .radius-docs-breadcrumb-wrapper > * {
+	z-index: 10;
+}
+
+.has-trheader.radius-docs-header-2 .menu-icon-wrapper li [class*=raw-icon],
+.has-trheader.radius-docs-header-3 .menu-icon-wrapper li [class*=raw-icon],
+.has-trheader.radius-docs-header-4 .menu-icon-wrapper li [class*=raw-icon]{
+	border: none;
+}

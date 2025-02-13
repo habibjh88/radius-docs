@@ -1,0 +1,260 @@
+@use '../abstract' as *;
+
+.layout-left-sidebar {
+	.radius-docs-widget-area {
+		@media (min-width: 1140px) {
+			padding-right: 30px;
+		}
+	}
+}
+
+.layout-right-sidebar {
+	.radius-docs-widget-area {
+		@media (min-width: 1140px) {
+			padding-left: 50px;
+		}
+	}
+}
+
+@media(max-width: 1140px) {
+	.layout-right-sidebar {
+		.radius-docs-widget-area {
+			padding-top: 60px;
+		}
+	}
+	.layout-left-sidebar {
+		.radius-docs-widget-area {
+			padding-bottom: 60px;
+		}
+	}
+}
+
+@media(min-width: 1140px) {
+	.sidebar-sticky .sidebar-inner-wrapper {
+		position: sticky;
+		top: 40px;
+	}
+	.has-sticky-header .sidebar-sticky .sidebar-inner-wrapper {
+		top: calc(var(--header-height) + 32px);
+	}
+}
+
+.radius-docs-widget-area {
+	font-size: calc(1rem - 1px);
+
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			position: relative;
+			margin-bottom: 5px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			> a {
+				position: relative;
+				display: block;
+
+			}
+		}
+
+		&.sub-menu {
+			margin-top: 5px;
+		}
+	}
+
+	.widget-title, .wp-block-heading {
+		font-size: 22px;
+	}
+
+	.radius-docs-single-sidebar,
+	.radius-docs-sidebar {
+		margin-bottom: 40px;
+		padding: 30px;
+		background: $gray10;
+		border-radius: 8px;
+
+		ul.children {
+			margin-top: 10px;
+		}
+	}
+
+	.wp-block-categories, .wp-block-archives, .widget_archive ul, .widget_categories ul {
+		li {
+			width: 100%;
+			float: left;
+			text-align: right;
+
+			a {
+				float: left;
+				border: none;
+				padding: 0;
+			}
+		}
+	}
+
+	.wp-block-categories.category-layout-2,
+	.wp-block-archives.category-layout-2,
+	.widget_archive.category-layout-2 ul,
+	.widget_categories.category-layout-2 ul {
+		li {
+			border: none;
+			border-radius: 0;
+			margin: 0;
+			padding: 5px;
+			width: 100%;
+			float: unset;
+			text-align: left;
+
+			a {
+				float: left;
+				border: none;
+				padding: 0 5px 0 18px;
+				color: $meta_color;
+
+				&:before {
+					position: absolute;
+					content: '';
+					left: 0;
+					top: 12px;
+					width: 7px;
+					height: 7px;
+					opacity: 1;
+					visibility: visible;
+					border-radius: 50%;
+					background-color: $border_color;
+					transition: all .21s ease-in-out;
+				}
+
+				&:hover {
+					padding-left: 22px;
+					color: $primary_color;
+
+					&:before {
+						background-color: $primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.wp-block-tag-cloud, .tagcloud {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+
+		a {
+			color: $title_color;
+			background: $white_color;
+			border: 1px solid $meta_light;
+			border-radius: 6px;
+			display: inline-block;
+			font-size: 15px !important;
+			margin: 0;
+			padding: 5px 14px;
+			line-height: 1.4;
+			flex-grow: 1;
+			text-align: center;
+
+			&:hover {
+				background-color: $secondary_color;
+				color: $white_color;
+				border-color: $secondary_color;
+			}
+		}
+	}
+
+	.radius-docs-blog-post {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.post-thumbnail {
+			overflow: hidden;
+			border-radius: 6px;
+			margin-bottom: 0;
+
+			img {
+				object-fit: cover;
+				object-position: center;
+				transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+			}
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+
+		ul {
+			li {
+				font-size: 15px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.blog-post-meta {
+			padding-top: 20px;
+		}
+
+		.entry-title {
+			font-size: 18px;
+			margin-bottom: 0;
+			line-height: 1.4;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+
+			a {
+				color: $title_color;
+
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+
+		.entry-content {
+			padding-top: 12px;
+		}
+
+		.post-thumbnail-wrap .posted-on {
+			display: none;
+		}
+	}
+
+	.blog-list-style {
+		.blog-post-meta {
+			padding-top: 0;
+		}
+
+		.article-inner-wrapper {
+			display: flex;
+			align-items: center;
+			column-gap: 15px;
+		}
+
+		.post-thumbnail-wrap {
+			width: 90px;
+		}
+
+		.entry-wrapper {
+			flex: 1;
+		}
+	}
+}

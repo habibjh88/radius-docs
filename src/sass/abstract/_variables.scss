@@ -1,0 +1,64 @@
+//Colours
+$base_fs: 16px;
+$columns: 12;
+$gutter: 30px;
+$spacing: 20;
+$dropdown_width: 230px;
+$container_width: var(--content-width, var(--radius-docs-container-width));
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1240px;
+
+$breakpoints: ('sm': $sm, 'md': $md, 'lg': $lg, 'xl': $xl);
+
+$primary_color: var(--radius-docs-primary-color);
+$secondary_color: var(--radius-docs-secondary-color);
+$primary_dark: var(--radius-docs-primary-dark);
+$primary_light: var(--radius-docs-primary-light);
+
+$body_bg_color: var(--radius-docs-body-bg-color);
+$body_color: var(--radius-docs-body-color);
+$border_color: var(--radius-docs-border-color);
+$title_color: var(--radius-docs-title-color);
+$rating_color: var(--radius-docs-rating-color);
+$button_color: var(--radius-docs-button-color);
+$button_text_color: var(--radius-docs-button-text-color);
+$meta_color: var(--radius-docs-meta-color);
+$meta_light: var(--radius-docs-meta-light);
+$footer_dark_color: #abb5c5;
+$gray10: var(--radius-docs-gray10);
+$gray20: var(--radius-docs-gray12);
+$gray30: var(--radius-docs-gray30);
+
+$body_rgb: var(--radius-docs-body-rgb);
+$title_rgb: var(--radius-docs-title-rgb);
+$primary_rgb: var(--radius-docs-primary-rgb);
+$secondary_rgb: var(--radius-docs-secondary-rgb);
+$category_color: var(--radius-docs-cat-color, $primary_color);
+
+$white_color: #FFFFFF;
+$black_color: #000000;
+$meta_overlay_color: #CBCBCB;
+$footer_bg_color: #00081B;
+$footer_border_color: #323748;
+
+
+//nav drawer width
+$nav_drawer_width: 350px;
+
+
+//Custom Layout
+$sidebar_width: 320px;
+$custom_gutter: 50px;
+
+//Header
+$dropdown_width: 230px;
+$transparent_menu_color: var(--rawadd-tr-menu);
+$transparent_menu_hover: var(--rawadd-tr-menu-hover);
+
+
+$base_font: var(--rawadd-body-font, 'Urbanist'), sans-serif;
+$heading_font: var(--rawadd-heading-font, 'Urbanist'), sans-serif;
+$menu_font: var(--rawadd-menu-font, 'Urbanist'), sans-serif;

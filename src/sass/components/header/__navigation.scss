@@ -1,0 +1,200 @@
+@use '../../abstract' as *;
+/* Main Navigation
+***************************/
+.navigation-menu-wrap {
+	@media (min-width: 1350px) {
+		position: relative;
+	}
+	@media(max-width: 480px) {
+		justify-content: center;
+		gap: 20px;
+	}
+}
+.radius-docs-navigation {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	.main-header-section & {
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	ul.radius-docs-navbar {
+		padding: 0;
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+		position: relative;
+		margin-bottom: 0;
+	}
+
+	ul li a {
+		font-size: $base_fs;
+		font-weight: 600;
+		line-height: 22px;
+		color: $title_color;
+		text-decoration: none;
+		text-transform: capitalize;
+		padding: 26px 16px;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+
+		@media (max-width: 1199px) {
+			padding: 20px 15px;
+		}
+	}
+
+
+	ul li.current-menu-item > a,
+	ul li.current-menu-ancestor > a {
+		color: $primary_color;
+	}
+
+	ul.radius-docs-navbar > li > a:hover {
+		color: $primary_color;
+	}
+
+	ul.radius-docs-navbar li.current-menu-item > a,
+	ul.radius-docs-navbar li.current > a {
+		color: $primary_color;
+	}
+
+	/* #. Submenu */
+	ul > li > ul {
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 100%;
+		z-index: 10;
+		padding: 0;
+		width: $dropdown_width;
+		text-align: left;
+		border-radius: 4px;
+		background-color: $white_color;
+		transition: transform .3s cubic-bezier(.175,.885,.32,1.275);
+		box-shadow: 0 0 2.1875rem 0 var(--radius-docs-tr-1);
+	}
+
+	ul > li > ul {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	ul > li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	ul li ul li ul {
+		left: 100%;
+		top: 0;
+		width: $dropdown_width;
+	}
+
+	ul li ul li {
+		display: block;
+		border-bottom: none;
+		border-left: none;
+	}
+
+	ul li ul li:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	ul li ul li a {
+		position: relative;
+		display: block;
+		color: $body_color;
+		text-transform: inherit;
+		padding: 5px 24px 5px 24px;
+		z-index: 2;
+		font-size: 14px;
+	}
+	ul li ul li:hover > a {
+		color: $primary_light;
+	}
+	ul li ul li:hover > a:before {
+		opacity: 1;
+		visibility: visible;
+		left: 20px;
+	}
+
+	ul li ul li:hover > a {
+		color: $primary_color;
+	}
+
+	ul li ul li:first-child {
+		margin-top: 12px;
+	}
+
+	ul li ul li:last-child {
+		margin-bottom: 12px;
+	}
+
+	ul > li:not(.mega-menu) li:hover > ul {
+		margin-top: -12px;
+	}
+
+	/*Menu hover effect*/
+	ul.radius-docs-navbar li ul.dropdown-menu li:last-child:after {
+		border-bottom: none;
+	}
+
+	ul.radius-docs-navbar li ul.dropdown-menu li a:hover {
+		color: $primary_color;
+	}
+
+	> ul li.page_item_has_children > a:after,
+	> ul li.menu-item-has-children > a:after {
+		content: "";
+		width: 7px;
+		height: 7px;
+		border: 1px solid var(--dowp-primary-color);
+		display: inline-block;
+		transform: rotate(45deg) translate(1px, -4px);
+		border-left: none;
+		border-top: none;
+		margin-left: 8px;
+		@include transition_default();
+	}
+
+	.caret i {
+		transition: fill 0.4s;
+		display: block;
+	}
+
+	.dropdown-menu .caret {
+		position: absolute;
+		top: 50%;
+		right: 24px;
+		transform: translateY(-50%);
+	}
+
+	.dropdown-menu .caret i {
+		transform: rotate(-90deg) scale(.9);
+	}
+}
+
+//Navigation offset change if it try to cross the body width
+.radius-docs-navbar li > .dropdown-menu li {
+	&.dropdown-inverse .dropdown-menu {
+		left: auto;
+		right: 100%;
+		min-width: 195px;
+		transition: all .2s;
+	}
+
+	&.dropdown-inverse:hover .dropdown-menu {
+		margin-right: -5px;
+	}
+}

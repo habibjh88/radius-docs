@@ -1,0 +1,50 @@
+@use '../../abstract' as *;
+.radius-docs-footer-1 {
+	.footer-shape {
+		ul {
+			li {
+				border-radius: 322px;
+				width: 322px;
+				height: 322px;
+				filter: blur(100px);
+				background: #231435;
+				position: absolute;
+				&:nth-child(1){
+					background-color: #EEFDE8;
+				}
+				&:nth-child(2){
+					background-color: #FFFBE8;
+					top: 0;
+					right: 0;
+					left: auto;
+				}
+			}
+		}
+	}
+	.footer-copyright-wrapper {
+		border-top: 1px solid $border_color;
+		a {
+			&:hover {
+				color: $title_color;
+			}
+		}
+		.social-icon {
+			a {
+				background-color: #eeeeee;
+				&:hover {
+					background-color: $primary_color;
+				}
+			}
+		}
+	}
+	.site-footer {
+		.footer-social {
+			a {
+				background-color: #eeeeee;
+				&:hover {
+					background-color: $primary_color;
+				}
+			}
+		}
+	}
+}
