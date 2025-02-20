@@ -44,8 +44,8 @@ class Customizer {
 			Customizer\Sections\TypographyMenu::class,
 			Customizer\Sections\Blog::class,
 			Customizer\Sections\BlogSingle::class,
-			Customizer\Sections\Service::class,
-			Customizer\Sections\Project::class,
+//			Customizer\Sections\Service::class,
+//			Customizer\Sections\Project::class,
 			Customizer\Sections\Contact::class,
 			Customizer\Sections\Socials::class,
 			Customizer\Sections\ColorSite::class,
@@ -63,7 +63,7 @@ class Customizer {
 			Customizer\Sections\LayoutsProjectSingle::class,
 			Customizer\Sections\LayoutsError::class,
 			Customizer\Sections\Footer::class,
-			Customizer\Sections\ZControllerExample::class,
+//			Customizer\Sections\ZControllerExample::class,
 			Customizer\Sections\Error::class,
 		];
 

@@ -33,11 +33,7 @@
 	gap: 5px;
 	align-items: center;
 }
-.entry-content {
-	img {
-		border-radius: 12px;
-	}
-}
+
 :where(.wp-block-columns.is-layout-flex) {
 	gap: 24px;
 }

@@ -4,11 +4,11 @@
 .menu-icon-wrapper {
 	.radius-docs-user-login {
 		a {
-			color: $title_color;
+			color: $white_color;
 			font-weight: 600;
 
 			&:hover {
-				color: $primary_color;
+				color: $white_color;
 			}
 		}
 	}
@@ -25,11 +25,11 @@
 		margin: 0 -13px;
 
 		path {
-			stroke: $title_color;
+			stroke: $white_color;
 		}
 
 		&:hover path {
-			stroke: $primary_color;
+			stroke: $white_color;
 		}
 	}
 
@@ -52,12 +52,12 @@
 
 	[class*=raw-icon] {
 		font-size: 20px;
-		color: $title_color
+		color: $white_color
 	}
 
 	a:hover i,
 	a:hover svg {
-		color: $primary_color;
+		color: $white_color;
 	}
 
 	ul.has-separator {
@@ -71,6 +71,7 @@
 	}
 	li [class*=raw-icon] {
 		transition: 0.4s;
+		color: $white_color
 	}
 
 	li.radius-docs-button {
@@ -81,13 +82,15 @@
 			height: 36px;
 			font-size: 14px;
 			padding: 0 20px;
-			border: 1px solid $meta_light;
+			border: 2px solid transparent;
 			border-radius: 30px;
 			background: $white_color;
+			color: $primary_color;
+
 			&:hover {
-				color: $white_color;
-				background: $primary_color;
-				border-color: $primary_color;
+				background: $white_color;
+				transform: translateY(-3px);
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 			}
 		}
 

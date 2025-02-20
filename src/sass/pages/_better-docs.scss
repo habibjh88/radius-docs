@@ -1,6 +1,21 @@
 // Doc Details Page
-$primary_color: #3b2ce1;
+@use '../abstract' as *;
 .radius-docs-theme {
+    //Background Primary
+   .betterdocs-single-category-wrapper .betterdocs-category-items-counts,
+   .betterdocs-single-category-wrapper .betterdocs-category-items-counts span {
+        background-color: $primary_color !important;
+    }
+
+    //Primary Color
+    .betterdocs-breadcrumb .betterdocs-breadcrumb-item.current span,
+    .betterdocs-category-grid-wrapper .betterdocs-category-title {
+        color: $primary_color !important;
+    }
+
+    .betterdocs-single-category-wrapper .betterdocs-category-header-inner {
+        border-bottom-color: $primary_color !important;
+    }
     .betterdocs-search-layout-1 {
         align-items: center;
         background-color: $primary_color !important;
@@ -14,7 +29,116 @@ $primary_color: #3b2ce1;
         text-align: center;
     }
 
-    .betterdocs-single-layout-4 {
+    &.home .betterdocs-search-form-wrapper {
+        background: $primary_color;
+        margin: 0 -30px !important;
+        padding: 50px;
+    }
+
+    .betterdocs-searchform {
+        padding-top: 18px !important;
+        padding-bottom: 17px !important;
+        border-radius: 30px !important;
+    }
+    .betterdocs-blocks-grid {
+        max-width: 1240px;
+        margin: 0 auto;
 
     }
+    .betterdocs-category-grid-wrapper .betterdocs-category-grid-inner-wrapper>:not(.betterdocs-grid-top-row-wrapper) .betterdocs-category-items-counts span {
+        color: #FFF;
+    }
+    .betterdocs-blocks-grid .betterdocs-footer {
+        display: flex;
+        align-items: flex-end;
+
+        a, button {
+            height: 40px !important;
+            padding: 0 20px !important;
+            background: $primary_color !important;
+            color:$white_color !important;
+            border: none !important;
+            &:hover {
+                background: $primary_dark !important;
+            }
+        }
+    }
+
+    .betterdocs-blocks-grid .betterdocs-single-category-inner{
+        padding: 10px !important;
+        border-radius: 6px !important;
+        overflow: hidden;
+        border: 1px solid #e7e8ed;
+    }
+    .betterdocs-categorygrid-oksazbl.betterdocs-category-grid-wrapper .betterdocs-category-grid-inner-wrapper {
+        margin-top: 50px;
+    }
+    .betterdocs-search-modal-layout-1 .betterdocs-search-layout-1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .betterdocs-search-modal-layout-1 .betterdocs-search-layout-1 .search-header .search-heading {
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    .betterdocs-breadcrumb .betterdocs-breadcrumb-item a {
+        color: #6e6e6e !important;
+        font-size: .9rem !important;
+        font-weight: normal !important;
+    }
+    .betterdocs-breadcrumb .breadcrumb-delimiter .breadcrumb-delimiter-icon {
+        width: 6px;
+        color: #6e6e6e !important;
+    }
+    .docs-single-title .betterdocs-entry-title {
+        color: #212121 !important;
+        padding-bottom: 10px;
+        text-transform: inherit !important;
+        font-size: 30px !important;
+    }
+    .doc-single-content-wrapper .betterdocs-entry-content {
+        padding-top: 30px;
+        border-top: 1px solid #e3e3ee;
+    }
+    .betterdocs-content-area .betterdocs-content-inner-area {
+        padding: 23px 40px !important;
+        border-radius: 5px;
+    }
+    .betterdocs-single-wrapper.betterdocs-single-layout-5 .betterdocs-content-area,
+    .betterdocs-single-layout-5 .betterdocs-full-sidebar-left {
+        margin-top: 60px;
+    }
+    .betterdocs-single-layout-5 .betterdocs-breadcrumb {
+        margin-top: -90px !important;
+        margin-left: -37px !important;
+    }
+    .betterdocs-content-area .betterdocs.reading-time {
+        border: 1px solid #ddd;
+    }
+    .betterdocs-search-layout-1 .search-bar {
+        background-color: #00000059 !important;
+        border-radius: 30px !important;
+        color: #FFF !important;
+        border: none !important;
+        height: 50px;
+    }
+    .betterdocs-search-layout-1 .search-header {
+        margin-bottom: 30px;
+    }
+    .betterdocs-search-layout-1 .search-bar .search-input-wrapper {
+        background: none;
+    }
+    .betterdocs-search-layout-1 .search-bar .search-input-wrapper .search-input {
+        color: #d0d0d0;
+    }
+    .betterdocs-search-layout-1 .search-bar .search-input-wrapper .search-icon path {
+        fill: #d0d0d0;
+    }
+
+
+    .betterdocs-blocks-grid {}
+    .betterdocs-blocks-grid {}
+    .betterdocs-blocks-grid {}
 }

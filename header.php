@@ -60,5 +60,5 @@ if ( radius_docs_option( 'radius_docs_preloader' ) ) {
 		</form>
 	</div>
 
-	<div id="content" class="site-content <?php echo esc_attr( radius_docs_option( 'radius_docs_blend' ) ); ?>">
+	<div style="opacity:0" id="content" class="site-content <?php echo esc_attr( radius_docs_option( 'radius_docs_blend' ) ); ?>">
 		<?php get_template_part( 'template-parts/content-banner', Opt::$banner_style ); ?>
