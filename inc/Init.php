@@ -43,6 +43,7 @@ final class Init {
 		Custom\Extras::instance();
 		Custom\DynamicStyles::instance();
 		Custom\MenuMeta::instance();
+		Custom\PostAttribute::instance();
 		Api\Customizer::instance();
 		Api\Gutenberg::instance();
 		Plugins\ThemeJetpack::instance();

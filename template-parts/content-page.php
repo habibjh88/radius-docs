@@ -14,13 +14,15 @@ use RT\RadiusDocs\Options\Opt;
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="post-thumbnail-wrap">
-		<figure class="post-thumbnail">
-			<?php the_post_thumbnail( 'full', [ 'loading' => 'lazy' ] ); ?>
-			<?php edit_post_link( 'Edit' ); ?>
-		</figure><!-- .post-thumbnail -->
-	</div>
-	<div class="entry-content">
+	<?php if ( has_post_thumbnail() ) : ?>
+        <div class="post-thumbnail-wrap">
+            <figure class="post-thumbnail">
+				<?php the_post_thumbnail( 'full', [ 'loading' => 'lazy' ] ); ?>
+				<?php edit_post_link( 'Edit' ); ?>
+            </figure><!-- .post-thumbnail -->
+        </div>
+	<?php endif; ?>
+    <div class="entry-content">
 		<?php
 		if ( ! ( Opt::$has_banner && Opt::$breadcrumb_title ) ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -29,12 +31,12 @@ use RT\RadiusDocs\Options\Opt;
 		the_content();
 
 		wp_link_pages(
-			array(
+			[
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'radius-docs' ),
 				'after'  => '</div>',
-			)
+			]
 		);
 		?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
 </article><!-- #post-## -->

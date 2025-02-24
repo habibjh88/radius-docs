@@ -44,6 +44,20 @@ class Hooks {
 
 			flush_rewrite_rules();
 		}
+		if ( ! empty( $_GET['docs_parent_remove'] ) && $_GET['docs_parent_remove'] == 1 && current_user_can( 'manage_options' ) ) {
+			global $wpdb;
+
+			// Update all child posts under 'docs' to remove parent association
+			$wpdb->query( "
+                UPDATE $wpdb->posts 
+                SET post_parent = 0 
+                WHERE post_type = 'docs' 
+                AND post_parent > 0
+            " );
+
+			// Optional: Clear cache to ensure changes take effect
+			wp_cache_flush();
+		}
 	}
 
 	/**

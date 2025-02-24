@@ -22,13 +22,14 @@ get_header(); ?>
 
 					?>
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-                        <div class="post-thumbnail-wrap">
-                            <figure class="post-thumbnail">
-								<?php the_post_thumbnail( 'full', [ 'loading' => 'lazy' ] ); ?>
-								<?php edit_post_link( 'Edit' ); ?>
-                            </figure><!-- .post-thumbnail -->
-                        </div>
+						<?php if ( has_post_thumbnail() ) : ?>
+                            <div class="post-thumbnail-wrap">
+                                <figure class="post-thumbnail">
+									<?php the_post_thumbnail( 'full', [ 'loading' => 'lazy' ] ); ?>
+									<?php edit_post_link( 'Edit' ); ?>
+                                </figure><!-- .post-thumbnail -->
+                            </div>
+						<?php endif; ?>
                         <div class="entry-content">
 							<?php
 
