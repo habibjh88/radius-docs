@@ -24,7 +24,7 @@ use RT\RadiusDocs\Options\Opt;
 	<?php endif; ?>
     <div class="entry-content">
 		<?php
-		if ( ! ( Opt::$has_banner && Opt::$breadcrumb_title ) ) {
+		if ( ! ( Opt::$has_banner && Opt::$breadcrumb_title ) && ! is_front_page() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		}
 

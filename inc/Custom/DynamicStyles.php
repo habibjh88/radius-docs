@@ -57,10 +57,10 @@ class DynamicStyles {
 	 */
 	private function inline_style() {
 
-		$primary_color     = radius_docs_option( 'radius_docs_primary_color', '#FF1212' );
-		$primary_dark      = radius_docs_option( 'radius_docs_primary_dark', '#da0c0c' );
-		$primary_light     = radius_docs_option( 'radius_docs_primary_light', '#ff3838' );
-		$secondary_color   = radius_docs_option( 'radius_docs_secondary_color', '#111111' );
+		$primary_color     = radius_docs_option( 'radius_docs_primary_color', '#7a45fd' );
+		$primary_dark      = radius_docs_option( 'radius_docs_primary_dark', '#581af4' );
+		$primary_light     = radius_docs_option( 'radius_docs_primary_light', '#936afc' );
+		$secondary_color   = radius_docs_option( 'radius_docs_secondary_color', '#212121' );
 		$body_bg_color     = radius_docs_option( 'radius_docs_body_bg_color', '#FFFFFF' );
 		$body_color        = radius_docs_option( 'radius_docs_body_color', '#343C4D' );
 		$border_color      = radius_docs_option( 'radius_docs_border_color', '#e7e7e7' );

@@ -26,6 +26,51 @@ class Hooks {
 		add_filter( 'wp_kses_allowed_html', [ __CLASS__, 'custom_wpkses_post_tags' ], 10, 2 );
 		add_action( 'wp_footer', [ __CLASS__, 'wp_footer_hook' ] );
 		add_action( 'template_redirect', [ __CLASS__, 'change_post_type_safely' ] );
+
+		add_action( 'restrict_manage_posts', [ __CLASS__, 'add_docs_category_filter' ] );
+		add_action( 'pre_get_posts', [ __CLASS__, 'filter_docs_by_category' ], 9999 );
+	}
+
+	public static function add_docs_category_filter() {
+		global $typenow;
+		if ( $typenow == 'docs' ) {
+			$taxonomy      = 'doc_category'; // Change this to the correct taxonomy if different
+			$selected      = isset( $_GET[ $taxonomy ] ) ? $_GET[ $taxonomy ] : '';
+			$info_taxonomy = get_taxonomy( $taxonomy );
+
+			wp_dropdown_categories( [
+				'show_option_all' => __( "Show All {$info_taxonomy->label}" ),
+				'taxonomy'        => $taxonomy,
+				'name'            => $taxonomy,
+				'orderby'         => 'name',
+				'selected'        => $selected,
+				'hierarchical'    => true,
+				'show_count'      => true,
+				'hide_empty'      => false,
+			] );
+		}
+	}
+
+	public static function filter_docs_by_category( $query ) {
+		global $pagenow;
+		if (
+			is_admin() &&
+			$pagenow === 'edit.php' &&
+			isset( $_GET['doc_category'] ) &&
+			! empty( $_GET['doc_category'] ) &&
+			isset( $_GET['post_type'] ) &&
+			$_GET['post_type'] === 'docs' &&
+			$query->is_main_query()
+		) {
+			$query->set( 'tax_query', [
+				'relation' => 'OR',
+				[
+					'taxonomy' => 'doc_category',
+					'field'    => 'term_id', // Use 'term_id' instead of 'id'
+					'terms'    => $_GET['doc_category'],
+				],
+			] );
+		}
 	}
 
 	public static function change_post_type_safely() {
@@ -179,7 +224,7 @@ class Hooks {
 	 * @return void
 	 */
 	public static function wp_footer_hook() {
-		echo '<style>.radius-docs-header-footer .site-header {opacity: 1}</style>';
+		echo '<style>#page {opacity: 1 !important;transition: opacity 0.5s 0.1s;}</style>';
 	}
 
 }

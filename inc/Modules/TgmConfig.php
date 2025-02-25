@@ -25,43 +25,9 @@ class TgmConfig {
 
 	public function register_required_plugins() {
 		$plugins = [
-			// Bundled
 			[
-				'name'     => 'RadiusDocs Core',
-				'slug'     => 'radius-docs-core',
-				'source'   => 'radius-docs-core.zip',
-				'required' => true,
-				'version'  => '1.0.0'
-			],
-			[
-				'name'     => 'DOWP Framework',
-				'slug'     => 'dowp-framework',
-				'source'   => 'dowp-framework.zip',
-				'required' => true,
-				'version'  => '2.8'
-			],
-			[
-				'name'     => 'DOWP Demo Importer',
-				'slug'     => 'dowp-demo-importer',
-				'source'   => 'dowp-demo-importer.zip',
-				'required' => false,
-				'version'  => '6.0.1'
-			],
-
-			// Repository
-			[
-				'name'     => esc_html__('Breadcrumb NavXT','radius-docs'),
-				'slug'     => 'breadcrumb-navxt',
-				'required' => false,
-			],
-			[
-				'name'     => esc_html__('Elementor Page Builder','radius-docs'),
-				'slug'     => 'elementor',
-				'required' => false,
-			],
-			[
-				'name'     => esc_html__('WP Fluent Forms','radius-docs'),
-				'slug'     => 'fluentform',
+				'name'     => esc_html__('BetterDocs','radius-docs'),
+				'slug'     => 'betterdocs',
 				'required' => false,
 			],
 		];

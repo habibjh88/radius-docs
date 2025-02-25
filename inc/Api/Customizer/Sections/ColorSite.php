@@ -49,7 +49,7 @@ class ColorSite extends Customizer {
 			],
 			'radius_docs_primary_dark'     => [
 				'type'  => 'color',
-				'label' => __( 'Primary Color', 'radius-docs' ),
+				'label' => __( 'Primary Dark Color', 'radius-docs' ),
 			],
 			'radius_docs_primary_light'     => [
 				'type'  => 'color',

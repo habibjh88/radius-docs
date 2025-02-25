@@ -42,7 +42,7 @@ if ( radius_docs_option( 'radius_docs_preloader' ) ) {
 ?>
 <div id="radius-docs-sticky-placeholder"></div>
 <div class="radius-docs-focus"></div>
-<div id="page" class="site">
+<div id="page" class="site" style="opacity:0">
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part( 'template-parts/header/topbar', Opt::$topbar_style ); ?>
@@ -60,5 +60,5 @@ if ( radius_docs_option( 'radius_docs_preloader' ) ) {
 		</form>
 	</div>
 
-	<div style="opacity:0" id="content" class="site-content <?php echo esc_attr( radius_docs_option( 'radius_docs_blend' ) ); ?>">
+	<div id="content" class="site-content <?php echo esc_attr( radius_docs_option( 'radius_docs_blend' ) ); ?>">
 		<?php get_template_part( 'template-parts/content-banner', Opt::$banner_style ); ?>

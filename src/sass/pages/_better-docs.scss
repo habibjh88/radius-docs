@@ -160,13 +160,17 @@
     }
 
     .betterdocs-live-search .betterdocs-searchform svg.docs-search-icon {
-        fill: #ffffff;
+        fill: #ffffff !important;
     }
 
     .betterdocs-live-search .betterdocs-searchform .betterdocs-search-field {
         background: none !important;
         color: #FFFFFF !important;
         height: 40px;
+    }
+
+    .betterdocs-single-category-wrapper {
+        flex-grow: 0 !important;
     }
 
     .betterdocs-blocks-grid {

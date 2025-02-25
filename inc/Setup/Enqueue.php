@@ -18,7 +18,7 @@ class Enqueue {
 	 */
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ], 12 );
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 15 );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 999 );
 	}
 
 	/**
