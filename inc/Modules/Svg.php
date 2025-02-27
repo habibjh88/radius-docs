@@ -77,10 +77,10 @@ class Svg {
 				$rotate_style = 'style=transform:rotate(' . $rotate . 'deg);';
 			}
 
-			$icon = '<span ' . esc_attr( $rotate_style ) . " class='rawadd-icon-{$name}'>{$svg_list[ $name ]}</span>";
+			$icon = '<span ' . esc_attr( $rotate_style ) . " class='radius-docs-icon-{$name}'>{$svg_list[ $name ]}</span>";
 
 			if ( $echo ) { ?>
-				<span <?php echo esc_attr( $rotate_style ) ?> class='rawadd-icon-<?php echo esc_attr( $name ) ?>'><?php echo wp_kses_post( $svg_list[ $name ] ) ?></span>
+				<span <?php echo esc_attr( $rotate_style ) ?> class='radius-docs-icon-<?php echo esc_attr( $name ) ?>'><?php echo wp_kses_post( $svg_list[ $name ] ) ?></span>
 				<?php
 			} else {
 				return $icon;

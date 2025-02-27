@@ -18,7 +18,7 @@
 
 
         // initialize conditionals
-        $(".rawadd-postmeta-container .rt-postmeta-dependent").each(function () {
+        $(".radius-docs-postmeta-container .rt-postmeta-dependent").each(function () {
             var name = $(this).data('required');
             var value = $(this).data('required-value');
             let newName = name.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
@@ -30,18 +30,18 @@
         });
 
         // radio field onchange conditional
-        $(".rawadd-postmeta-container .has-condition .rtfm-meta-field").on('change', function () {
+        $(".radius-docs-postmeta-container .has-condition .rtfm-meta-field").on('change', function () {
             var name = $(this).attr('name');
             var value = $(this).val();
 
             // hide
-            $('.rawadd-postmeta-container tr[data-required="' + name + '"]')
+            $('.radius-docs-postmeta-container tr[data-required="' + name + '"]')
                 .filter(function () {
                     return $(this).data("required-value") != value;
                 }).hide();
 
             // show
-            $('.rawadd-postmeta-container tr[data-required="' + name + '"]')
+            $('.radius-docs-postmeta-container tr[data-required="' + name + '"]')
                 .filter(function () {
                     return $(this).data("required-value") == value;
                 }).show();
@@ -50,7 +50,7 @@
 
         /*
 
- $(".rawadd-postmeta-container .rt-postmeta-dependent").each(function () {
+ $(".radius-docs-postmeta-container .rt-postmeta-dependent").each(function () {
             var name = $(this).data('required');
             var value = $(this).data('required-value');
 
@@ -71,18 +71,18 @@
         });
 
 
-        $(".rawadd-postmeta-container input[type=radio]").on('change', function () {
+        $(".radius-docs-postmeta-container input[type=radio]").on('change', function () {
             var name = $(this).attr('name');
             var value = $(this).val();
 
             // hide
-            $('.rawadd-postmeta-container tr[data-required="' + name + '"]')
+            $('.radius-docs-postmeta-container tr[data-required="' + name + '"]')
                 .filter(function () {
                     return $(this).data("required-value") != value;
                 }).hide();
 
             // show
-            $('.rawadd-postmeta-container tr[data-required="' + name + '"]')
+            $('.radius-docs-postmeta-container tr[data-required="' + name + '"]')
                 .filter(function () {
                     return $(this).data("required-value") == value;
                 }).show();
@@ -103,7 +103,7 @@
         });
 
         // Add more button action
-        $(".rawadd-postmeta-container .rt-postmeta-repeater-addmore").on('click', 'button', function (event) {
+        $(".radius-docs-postmeta-container .rt-postmeta-repeater-addmore").on('click', 'button', function (event) {
 
             // Num Data
             var $wrapper = $(this).closest('.rt-postmeta-repeater-wrap');

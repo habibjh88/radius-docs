@@ -3,7 +3,6 @@
 namespace RT\RadiusDocs\Modules;
 
 use RT\RadiusDocs\Helpers\Fns;
-use RawAddons\Helper\Fns as RawFns;
 
 /**
  * PostMeta Class
@@ -63,11 +62,7 @@ class PostMeta {
 			$_meta_data['tag'] = $tag_source;
 		}
 		$_meta_data['comment'] = $comments_text;
-		
-		if ( is_raw_addons() ) {
-			$_meta_data['view']    = RawFns::post_views_count();
-			$_meta_data['reading'] = RawFns::reading_time_count( get_the_content(), true );
-		}
+
 
 		$meta_list = $args['include'] ?? array_keys( $_meta_data );
 

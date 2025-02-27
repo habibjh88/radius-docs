@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-25 11:56+0000\n"
+"POT-Creation-Date: 2025-02-27 05:07+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Query String"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:32, ../inc/Helpers/Fns.php:365
+#: ../inc/Helpers/Fns.php:32, ../inc/Helpers/Fns.php:361
 msgid "Facebook"
 msgstr ""
 
@@ -151,15 +151,15 @@ msgstr ""
 msgid "Twitter"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:40, ../inc/Helpers/Fns.php:367
+#: ../inc/Helpers/Fns.php:40, ../inc/Helpers/Fns.php:363
 msgid "Linkedin"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:44, ../inc/Helpers/Fns.php:370
+#: ../inc/Helpers/Fns.php:44, ../inc/Helpers/Fns.php:366
 msgid "Youtube"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:48, ../inc/Helpers/Fns.php:368
+#: ../inc/Helpers/Fns.php:48, ../inc/Helpers/Fns.php:364
 msgid "Pinterest"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:284, ../inc/Api/Customizer/Sections/Blog.php:43, ../inc/Api/Customizer/Sections/Blog.php:50, ../inc/Api/Customizer/Sections/Blog.php:115, ../inc/Api/Customizer/Sections/Project.php:95, ../inc/Api/Customizer/Sections/Service.php:95
+#: ../inc/Helpers/Fns.php:284, ../inc/Api/Customizer/Sections/Blog.php:43, ../inc/Api/Customizer/Sections/Blog.php:102, ../inc/Api/Customizer/Sections/Project.php:95, ../inc/Api/Customizer/Sections/Service.php:95
 msgid "Default From Theme"
 msgstr ""
 
@@ -239,47 +239,39 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:352
-msgid "Reading"
-msgstr ""
-
-#: ../inc/Helpers/Fns.php:353
-msgid "Views"
-msgstr ""
-
-#: ../inc/Helpers/Fns.php:366
+#: ../inc/Helpers/Fns.php:362
 msgid "Twitter X"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:369
+#: ../inc/Helpers/Fns.php:365
 msgid "Whatsapp"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:406
+#: ../inc/Helpers/Fns.php:402
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:411
+#: ../inc/Helpers/Fns.php:407
 msgid "Single Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:416
+#: ../inc/Helpers/Fns.php:412
 msgid "Page Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:421
+#: ../inc/Helpers/Fns.php:417
 msgid "Service Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:426
+#: ../inc/Helpers/Fns.php:422
 msgid "Project Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:438
+#: ../inc/Helpers/Fns.php:434
 msgid "WooCommerce Archive Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:443
+#: ../inc/Helpers/Fns.php:439
 msgid "WooCommerce Single Sidebar"
 msgstr ""
 
@@ -288,18 +280,18 @@ msgid "Breadcrumbs"
 msgstr ""
 
 #. translators: used comment as singular and plular
-#: ../inc/Modules/PostMeta.php:52
+#: ../inc/Modules/PostMeta.php:51
 msgid "%s Comment"
 msgid_plural "%s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %1$s is the prefix, %2$s is the author's byline.
-#: ../inc/Modules/PostMeta.php:114
+#: ../inc/Modules/PostMeta.php:109
 msgid "%1$s %2$s"
 msgstr ""
 
-#: ../inc/Modules/PostMeta.php:198
+#: ../inc/Modules/PostMeta.php:193
 msgid ", "
 msgstr ""
 
@@ -503,7 +495,7 @@ msgstr ""
 msgid "Banner Color Mode"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:54, ../inc/Api/Customizer/Sections/Blog.php:136, ../inc/Api/Customizer/Sections/General.php:87, ../inc/Api/Customizer/Sections/Project.php:122, ../inc/Api/Customizer/Sections/Service.php:122
+#: ../inc/Api/Customizer/Sections/Banner.php:54, ../inc/Api/Customizer/Sections/Blog.php:123, ../inc/Api/Customizer/Sections/General.php:87, ../inc/Api/Customizer/Sections/Project.php:122, ../inc/Api/Customizer/Sections/Service.php:122
 msgid "Default"
 msgstr ""
 
@@ -583,151 +575,131 @@ msgstr ""
 msgid "Blog Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:44, ../inc/Api/Customizer/Sections/Blog.php:51, ../inc/Api/Customizer/Sections/Project.php:80, ../inc/Api/Customizer/Sections/Service.php:80
+#: ../inc/Api/Customizer/Sections/Blog.php:44, ../inc/Api/Customizer/Sections/Project.php:80, ../inc/Api/Customizer/Sections/Service.php:80
 msgid "Grid 1"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:45, ../inc/Api/Customizer/Sections/Blog.php:55, ../inc/Api/Customizer/Sections/Project.php:84, ../inc/Api/Customizer/Sections/Service.php:84
+#: ../inc/Api/Customizer/Sections/Blog.php:45, ../inc/Api/Customizer/Sections/Project.php:84, ../inc/Api/Customizer/Sections/Service.php:84
 msgid "List 1"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:52, ../inc/Api/Customizer/Sections/Project.php:81, ../inc/Api/Customizer/Sections/Service.php:81
-msgid "Grid 2"
-msgstr ""
-
-#: ../inc/Api/Customizer/Sections/Blog.php:53, ../inc/Api/Customizer/Sections/Project.php:82, ../inc/Api/Customizer/Sections/Service.php:82
-msgid "Grid 3"
-msgstr ""
-
-#: ../inc/Api/Customizer/Sections/Blog.php:54, ../inc/Api/Customizer/Sections/Project.php:83, ../inc/Api/Customizer/Sections/Service.php:83
-msgid "Grid 4"
-msgstr ""
-
-#: ../inc/Api/Customizer/Sections/Blog.php:56, ../inc/Api/Customizer/Sections/Project.php:85, ../inc/Api/Customizer/Sections/Service.php:85
-msgid "List 2"
-msgstr ""
-
-#: ../inc/Api/Customizer/Sections/Blog.php:57
-msgid "List 3"
-msgstr ""
-
-#: ../inc/Api/Customizer/Sections/Blog.php:65, ../inc/Api/Customizer/Sections/BlogSingle.php:74, ../inc/Api/Customizer/Sections/Project.php:49, ../inc/Api/Customizer/Sections/Service.php:49
+#: ../inc/Api/Customizer/Sections/Blog.php:52, ../inc/Api/Customizer/Sections/BlogSingle.php:74, ../inc/Api/Customizer/Sections/Project.php:49, ../inc/Api/Customizer/Sections/Service.php:49
 msgid "Visibility Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:70, ../inc/Api/Customizer/Sections/BlogSingle.php:79, ../inc/Api/Customizer/Sections/Project.php:54, ../inc/Api/Customizer/Sections/Service.php:54
+#: ../inc/Api/Customizer/Sections/Blog.php:57, ../inc/Api/Customizer/Sections/BlogSingle.php:79, ../inc/Api/Customizer/Sections/Project.php:54, ../inc/Api/Customizer/Sections/Service.php:54
 msgid "Meta Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:76
+#: ../inc/Api/Customizer/Sections/Blog.php:63
 msgid "Title Above Meta Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:81, ../inc/Api/Customizer/Sections/Project.php:60, ../inc/Api/Customizer/Sections/Service.php:60
+#: ../inc/Api/Customizer/Sections/Blog.php:68, ../inc/Api/Customizer/Sections/Project.php:60, ../inc/Api/Customizer/Sections/Service.php:60
 msgid "Entry Content Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:87
+#: ../inc/Api/Customizer/Sections/Blog.php:74
 msgid "Read More Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:93
+#: ../inc/Api/Customizer/Sections/Blog.php:80
 msgid "Enable Different Category Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:103, ../inc/Api/Customizer/Sections/Project.php:76, ../inc/Api/Customizer/Sections/Service.php:76
+#: ../inc/Api/Customizer/Sections/Blog.php:90, ../inc/Api/Customizer/Sections/Project.php:76, ../inc/Api/Customizer/Sections/Service.php:76
 msgid "Blog Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:104
+#: ../inc/Api/Customizer/Sections/Blog.php:91
 msgid "This option works only for blog layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:111, ../inc/Api/Customizer/Sections/Project.php:91, ../inc/Api/Customizer/Sections/Service.php:91
+#: ../inc/Api/Customizer/Sections/Blog.php:98, ../inc/Api/Customizer/Sections/Project.php:91, ../inc/Api/Customizer/Sections/Service.php:91
 msgid "Grid Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:112, ../inc/Api/Customizer/Sections/Project.php:92, ../inc/Api/Customizer/Sections/Service.php:92
+#: ../inc/Api/Customizer/Sections/Blog.php:99, ../inc/Api/Customizer/Sections/Project.php:92, ../inc/Api/Customizer/Sections/Service.php:92
 msgid "This option works only for large device"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:116, ../inc/Api/Customizer/Sections/Project.php:96, ../inc/Api/Customizer/Sections/Service.php:96
+#: ../inc/Api/Customizer/Sections/Blog.php:103, ../inc/Api/Customizer/Sections/Project.php:96, ../inc/Api/Customizer/Sections/Service.php:96
 msgid "1 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:117, ../inc/Api/Customizer/Sections/Project.php:97, ../inc/Api/Customizer/Sections/Service.php:97
+#: ../inc/Api/Customizer/Sections/Blog.php:104, ../inc/Api/Customizer/Sections/Project.php:97, ../inc/Api/Customizer/Sections/Service.php:97
 msgid "2 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:118, ../inc/Api/Customizer/Sections/Project.php:98, ../inc/Api/Customizer/Sections/Service.php:98
+#: ../inc/Api/Customizer/Sections/Blog.php:105, ../inc/Api/Customizer/Sections/Project.php:98, ../inc/Api/Customizer/Sections/Service.php:98
 msgid "3 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:119, ../inc/Api/Customizer/Sections/Project.php:99, ../inc/Api/Customizer/Sections/Service.php:99
+#: ../inc/Api/Customizer/Sections/Blog.php:106, ../inc/Api/Customizer/Sections/Project.php:99, ../inc/Api/Customizer/Sections/Service.php:99
 msgid "4 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:120, ../inc/Api/Customizer/Sections/Project.php:100, ../inc/Api/Customizer/Sections/Service.php:100
+#: ../inc/Api/Customizer/Sections/Blog.php:107, ../inc/Api/Customizer/Sections/Project.php:100, ../inc/Api/Customizer/Sections/Service.php:100
 msgid "5 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:126, ../inc/Api/Customizer/Sections/Project.php:106, ../inc/Api/Customizer/Sections/Service.php:106
+#: ../inc/Api/Customizer/Sections/Blog.php:113, ../inc/Api/Customizer/Sections/Project.php:106, ../inc/Api/Customizer/Sections/Service.php:106
 msgid "Content Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:132, ../inc/Api/Customizer/Sections/Project.php:118, ../inc/Api/Customizer/Sections/Service.php:118
+#: ../inc/Api/Customizer/Sections/Blog.php:119, ../inc/Api/Customizer/Sections/Project.php:118, ../inc/Api/Customizer/Sections/Service.php:118
 msgid "Pagination Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:133
+#: ../inc/Api/Customizer/Sections/Blog.php:120
 msgid "This option works only for blog pagination style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:137, ../inc/Api/Customizer/Sections/Project.php:123, ../inc/Api/Customizer/Sections/Service.php:123, ../inc/Api/Customizer/Sections/ZControllerExample.php:276
+#: ../inc/Api/Customizer/Sections/Blog.php:124, ../inc/Api/Customizer/Sections/Project.php:123, ../inc/Api/Customizer/Sections/Service.php:123, ../inc/Api/Customizer/Sections/ZControllerExample.php:276
 msgid "Style 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:143, ../inc/Api/Customizer/Sections/Project.php:129, ../inc/Api/Customizer/Sections/Service.php:129
+#: ../inc/Api/Customizer/Sections/Blog.php:130, ../inc/Api/Customizer/Sections/Project.php:129, ../inc/Api/Customizer/Sections/Service.php:129
 msgid "Enable Masonry Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:148
+#: ../inc/Api/Customizer/Sections/Blog.php:135
 msgid "Post Meta Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:153, ../inc/Api/Customizer/Sections/BlogSingle.php:61
+#: ../inc/Api/Customizer/Sections/Blog.php:140, ../inc/Api/Customizer/Sections/BlogSingle.php:61
 msgid "Meta Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:160, ../inc/Api/Customizer/Sections/Blog.php:162, ../inc/Api/Customizer/Sections/BlogSingle.php:53, ../inc/Api/Customizer/Sections/Project.php:152, ../inc/Api/Customizer/Sections/Project.php:154, ../inc/Api/Customizer/Sections/Project.php:176, ../inc/Api/Customizer/Sections/Service.php:152, ../inc/Api/Customizer/Sections/Service.php:154, ../inc/Api/Customizer/Sections/Service.php:176, ../inc/Api/Customizer/Sections/ZControllerExample.php:202, ../inc/Api/Customizer/Sections/ZControllerExample.php:203
+#: ../inc/Api/Customizer/Sections/Blog.php:147, ../inc/Api/Customizer/Sections/Blog.php:149, ../inc/Api/Customizer/Sections/BlogSingle.php:53, ../inc/Api/Customizer/Sections/Project.php:152, ../inc/Api/Customizer/Sections/Project.php:154, ../inc/Api/Customizer/Sections/Project.php:176, ../inc/Api/Customizer/Sections/Service.php:152, ../inc/Api/Customizer/Sections/Service.php:154, ../inc/Api/Customizer/Sections/Service.php:176, ../inc/Api/Customizer/Sections/ZControllerExample.php:202, ../inc/Api/Customizer/Sections/ZControllerExample.php:203
 msgid "Choose Meta"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:161, ../inc/Api/Customizer/Sections/BlogSingle.php:52, ../inc/Api/Customizer/Sections/BlogSingle.php:110, ../inc/Api/Customizer/Sections/Project.php:153, ../inc/Api/Customizer/Sections/Project.php:175, ../inc/Api/Customizer/Sections/Service.php:153, ../inc/Api/Customizer/Sections/Service.php:175
+#: ../inc/Api/Customizer/Sections/Blog.php:148, ../inc/Api/Customizer/Sections/BlogSingle.php:52, ../inc/Api/Customizer/Sections/BlogSingle.php:110, ../inc/Api/Customizer/Sections/Project.php:153, ../inc/Api/Customizer/Sections/Project.php:175, ../inc/Api/Customizer/Sections/Service.php:153, ../inc/Api/Customizer/Sections/Service.php:175
 msgid "You can sort meta by drag and drop"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:170
+#: ../inc/Api/Customizer/Sections/Blog.php:157
 msgid "Thumbnail Gallery Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:175
+#: ../inc/Api/Customizer/Sections/Blog.php:162
 msgid "Thumbnail Gallery Arrows ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:181
+#: ../inc/Api/Customizer/Sections/Blog.php:168
 msgid "Thumbnail Gallery Dots ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:186
+#: ../inc/Api/Customizer/Sections/Blog.php:173
 msgid "Thumbnail Gallery Fade ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:191
+#: ../inc/Api/Customizer/Sections/Blog.php:178
 msgid "Thumbnail Gallery Autoplay ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:197
+#: ../inc/Api/Customizer/Sections/Blog.php:184
 msgid "Thumbnail Gallery Infinite ?"
 msgstr ""
 
@@ -1601,6 +1573,22 @@ msgstr ""
 
 #: ../inc/Api/Customizer/Sections/Project.php:77
 msgid "This option works only for project layout"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:81, ../inc/Api/Customizer/Sections/Service.php:81
+msgid "Grid 2"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:82, ../inc/Api/Customizer/Sections/Service.php:82
+msgid "Grid 3"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:83, ../inc/Api/Customizer/Sections/Service.php:83
+msgid "Grid 4"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:85, ../inc/Api/Customizer/Sections/Service.php:85
+msgid "List 2"
 msgstr ""
 
 #: ../inc/Api/Customizer/Sections/Project.php:112, ../inc/Api/Customizer/Sections/Service.php:112

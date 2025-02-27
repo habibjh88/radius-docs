@@ -348,10 +348,6 @@ class Fns {
 			'comment'  => __( 'Comment', 'radius-docs' ),
 		];
 
-		if ( is_raw_addons() ) {
-			$meta_list['reading'] = __( 'Reading', 'radius-docs' );
-			$meta_list['view']    = __( 'Views', 'radius-docs' );
-		}
 
 		return $meta_list;
 	}

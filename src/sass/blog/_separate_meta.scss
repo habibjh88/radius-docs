@@ -74,8 +74,8 @@
 
 	.cat-different-color & .category-links {
 		a.has-bg {
-			background: var(--rawadd-cat-color) !important;
-			border-color: var(--rawadd-cat-color) !important;
+			background: var(--radius-docs-cat-color) !important;
+			border-color: var(--radius-docs-cat-color) !important;
 			color: $white_color !important;
 
 			&.bright-bg {

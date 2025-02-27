@@ -46,7 +46,7 @@ class Header extends Customizer {
 				'label'     => __( 'Choose Layout', 'radius-docs' ),
 				'default'   => '1',
 				'edit-link' => '.site-branding',
-				'choices'   => Fns::image_placeholder( 'header', 5, 'svg' )
+				'choices'   => Fns::image_placeholder( 'header', 1, 'svg' )
 			],
 
 			'radius_docs_menu_alignment' => [

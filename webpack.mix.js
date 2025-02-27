@@ -89,6 +89,7 @@ if (process.env.npm_config_package) {
 			"single-radius-docs-team.php",
 			"style-editor.css",
 			"style.css",
+			"readme.txt",
 			"wpml-config.xml",
 		];
 		fs.ensureDir(copyTo, function (err) {

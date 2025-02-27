@@ -1,7 +1,6 @@
 <?php
 
 namespace RT\RadiusDocs\Modules;
-use RawAddons\Modules\Thumbnail as RawThumbnail;
 
 /**
  * Thumbnail Class
@@ -17,13 +16,8 @@ class Thumbnail {
 	 * @return void
 	 */
 	public static function get_thumbnail( $size = 'large', $single = false, $thumb_cat = '' ) {
-		if ( is_raw_addons() ) {
-			RawThumbnail::get_thumbnail( $size, $single, $thumb_cat );
-		} else {
-			$classes = 'post-' . ( $single ? 'single' : 'grid' );
-			self::default_thumbnail( $size, $single, $thumb_cat, $classes );
-		}
-
+        $classes = 'post-' . ( $single ? 'single' : 'grid' );
+        self::default_thumbnail( $size, $single, $thumb_cat, $classes );
 	}
 
 	/**

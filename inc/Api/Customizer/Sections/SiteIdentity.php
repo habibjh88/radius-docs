@@ -57,7 +57,7 @@ class SiteIdentity extends Customizer {
 				'label'     => __( 'Main Logo Dimension', 'radius-docs' ),
 				'description'     => __( 'Enter the width and height value separate by comma (,). Eg. 120px,45px', 'radius-docs' ),
 				'transport' => '',
-				'default' => 'auto,42px',
+				'default' => 'none,42px',
 			],
 
 			'radius_docs_mobile_logo_width_height' => [

@@ -1091,24 +1091,3 @@ if ( ! function_exists( 'is_radius_docs_service_category' ) ) {
 	}
 }
 
-if ( ! function_exists( 'is_raw_addons' ) ) {
-	/**
-	 * Check Raw Addons plugin
-	 *
-	 * @return bool
-	 */
-	function is_raw_addons() {
-		return function_exists( 'rawAddons' );
-	}
-}
-
-if ( ! function_exists( 'is_raw_addons_pro' ) ) {
-	/**
-	 * Check Raw Addons plugin
-	 *
-	 * @return bool
-	 */
-	function is_raw_addons_pro() {
-		return function_exists( 'rawAddonsPro' );
-	}
-}

@@ -19,7 +19,7 @@ class DynamicStyles {
 	 * Class Construct
 	 */
 	public function __construct() {
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 20 );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 999 );
 	}
 
 	/**
@@ -441,8 +441,11 @@ class DynamicStyles {
 		$typo_body           = json_decode( radius_docs_option( 'radius_docs_body_typo' ), true );
 		$typo_menu           = json_decode( radius_docs_option( 'radius_docs_menu_typo' ), true );
 		$typo_heading        = json_decode( radius_docs_option( 'radius_docs_all_heading_typo' ), true );
+
 		$body_font_family    = $typo_body['font'] ?? 'Urbanist';
 		$heading_font_family = $typo_heading['font'] ?? $body_font_family;
+
+
 		?>
 		:root{
 		--radius-docs-body-font: '<?php echo esc_html( $typo_body['font'] ); ?>', sans-serif;
@@ -505,7 +508,7 @@ class DynamicStyles {
 	public static function font_css( $selector, $font ) {
 		$css = '';
 		$css .= $selector . '{'; //Start CSS
-		$css .= ! empty( $font['font'] ) ? "font-family: '" . $font['font'] . "', sans-serif;" : '';
+		$css .= ! empty( $font['font'] ) ? "font-family: {$font['font']}, sans-serif;" : '';
 		$css .= ! empty( $font['size'] ) ? "font-size: {$font['size']}px;" : '';
 		$css .= ! empty( $font['lineheight'] ) ? "line-height: {$font['lineheight']}px;" : '';
 		$css .= ! empty( $font['regularweight'] ) ? "font-weight: {$font['regularweight']};" : '';

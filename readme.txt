@@ -7,12 +7,14 @@ Blog Colum = ?column=default //col-lg-12, col-lg-6, col-lg-4, col-lg-3
 layout = ?layout=full-width //left-sidebar, right-sidebar
 
 
-
 Docs Migration Steps:
-1. Make a Homepage with a fullwidth template
-2. First make all necessary categories under BetterDocs depending on the parent's old parent post.
+1. Make a Homepage with a fullwidth template and set the home page as Home page from settings
+  use the below block in the home page:
+  a) BetterDocs Search Form
+  b) BetterDocs Category Grid
+2. First make all necessary categories under BetterDocs depending on the old parent post.
 3. Migrate post to BetterDocs = /?rt_migration=1
-4. Need to add a category to docs
+4. Need to add all desire categories to all docs item
 5. Remove Child/Parent relationships = /?docs_parent_remove=1
 
 

@@ -45,19 +45,6 @@ class Blog extends Customizer {
 			'list-1'    => __( 'List 1', 'radius-docs' ),
 		];
 
-		if(is_raw_addons_pro()){
-			$blog_layout = [
-				'default' => __( 'Default From Theme', 'radius-docs' ),
-				'grid-1'  => __( 'Grid 1', 'radius-docs' ),
-				'grid-2'  => __( 'Grid 2', 'radius-docs' ),
-				'grid-3'  => __( 'Grid 3', 'radius-docs' ),
-				'grid-4'  => __( 'Grid 4', 'radius-docs' ),
-				'list-1'    => __( 'List 1', 'radius-docs' ),
-				'list-2'  => __( 'List 2', 'radius-docs' ),
-				'list-3'  => __( 'List 3', 'radius-docs' ),
-			];
-		}
-
 		return apply_filters( 'radius_docs_blog_controls', [
 
 			'radius_docs_blog_visibility' => [
