@@ -109,8 +109,6 @@ class Hooks {
 		}
 
 
-
-
 		if ( ! empty( $_GET['docs_parent_remove'] ) && $_GET['docs_parent_remove'] == 1 && current_user_can( 'manage_options' ) ) {
 			global $wpdb;
 
