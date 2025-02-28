@@ -74,7 +74,9 @@ class Hooks {
 	}
 
 	public static function change_post_type_safely() {
-		if ( ! empty( $_GET['rt_migration'] ) && $_GET['rt_migration'] == 1 && current_user_can( 'manage_options' ) ) {
+
+
+        if ( ! empty( $_GET['rt_migration'] ) && $_GET['rt_migration'] == 1 && current_user_can( 'manage_options' ) ) {
 			$args = [
 				'post_type'      => 'post',
 				'posts_per_page' => - 1,
@@ -89,6 +91,26 @@ class Hooks {
 
 			flush_rewrite_rules();
 		}
+
+		if ( ! empty( $_GET['rt_migration_back'] ) && $_GET['rt_migration_back'] == 1 && current_user_can( 'manage_options' ) ) {
+			$args = [
+				'post_type'      => 'docs',
+				'posts_per_page' => - 1,
+				'fields'         => 'ids',
+			];
+
+			$posts = get_posts( $args );
+
+			foreach ( $posts as $post_id ) {
+				set_post_type( $post_id, 'post' );
+			}
+
+			flush_rewrite_rules();
+		}
+
+
+
+
 		if ( ! empty( $_GET['docs_parent_remove'] ) && $_GET['docs_parent_remove'] == 1 && current_user_can( 'manage_options' ) ) {
 			global $wpdb;
 
