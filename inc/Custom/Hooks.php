@@ -22,7 +22,7 @@ class Hooks {
 	public function __construct() {
 		add_action( 'admin_enqueue_scripts', [ __CLASS__, 'meta_css' ] );
 		add_action( 'radius_docs_before_single_content', [ __CLASS__, 'before_single_content' ] );
-		add_filter( 'wp_calculate_image_srcset_meta', '__return_null' );
+//		add_filter( 'wp_calculate_image_srcset_meta', '__return_null' );
 		add_filter( 'wp_kses_allowed_html', [ __CLASS__, 'custom_wpkses_post_tags' ], 10, 2 );
 		add_action( 'wp_footer', [ __CLASS__, 'wp_footer_hook' ] );
 		add_action( 'template_redirect', [ __CLASS__, 'change_post_type_safely' ] );

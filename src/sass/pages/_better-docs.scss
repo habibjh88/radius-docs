@@ -144,13 +144,14 @@
         color: $primary_color !important;
     }
 
-    .betterdocs-articles-list li a span.prof {
+    .betterdocs-articles-list li a span.pro {
         background: #F00;
         color: #FFF;
         padding: 2px 5px;
         border-radius: 3px;
         font-size: 10px;
         font-weight: bold;
+        text-transform: uppercase;
     }
 
     h1, h2, h3, h4, h5, h5 {
@@ -293,6 +294,9 @@
         box-shadow: 0 13px 30px rgba(0, 0, 0, .15);
     }
 
+
+    .betterdocs-wrapper.betterdocs-docs-archive-wrapper .betterdocs-footer,
+    .betterdocs-wrapper.betterdocs-docs-archive-wrapper .betterdocs-footer,
     .betterdocs-blocks-grid .betterdocs-footer {
         display: flex;
         align-items: flex-end;
