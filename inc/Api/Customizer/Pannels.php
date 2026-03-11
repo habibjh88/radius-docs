@@ -21,7 +21,7 @@ class Pannels {
 	 * @return
 	 */
 	public function __construct() {
-		$this->add_panels();
+		add_action('init', [ $this, 'add_panels' ], 0 );
 	}
 
 	/**
