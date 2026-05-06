@@ -74,6 +74,16 @@ class Gutenberg {
 			],
 		] );
 
+		// Table block styles
+		register_block_style( 'core/table', [
+			'name'  => 'two-column-style',
+			'label' => esc_html__( 'Two columns style', 'radius-docs' ),
+		] );
+		register_block_style( 'core/table', [
+			'name'  => 'three-column-style',
+			'label' => esc_html__( 'Three columns style', 'radius-docs' ),
+		] );
+
 		add_theme_support( 'editor-font-sizes', [
 			[
 				'name' => esc_html__( 'Small', 'radius-docs' ),

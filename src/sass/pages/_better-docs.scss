@@ -77,6 +77,15 @@
         box-shadow: 0 0 30px #f1f1f1;
     }
 
+    &.single-docs .betterdocs-content-area {
+        a {
+            color: $primary_color;
+            &:hover {
+                color: $primary_dark;
+            }
+        }
+    }
+
     .betterdocs-sidebar .betterdocs-sidebar-content .betterdocs-single-category-wrapper.active .betterdocs-single-category-inner .betterdocs-category-header {
         background: $primary_color !important
     }
@@ -213,6 +222,7 @@
     .betterdocs-fluid-wrapper.betterdocs-single-layout-5 .betterdocs-content-wrapper .betterdocs-content-area {
         grid-column-end: 13 !important;
     }
+
     .betterdocs-sidebar.betterdocs-full-sidebar-right {
         display: none !important;
     }
@@ -484,11 +494,11 @@
         padding-top: 0 !important;
     }
 
-   @media (min-width: 992px) {
-       .betterdocs-taxonomy-wrapper:not(.betterdocs-fluid-wrapper) .betterdocs-content-wrapper .betterdocs-sidebar {
-           width: 350px !important;
-       }
-   }
+    @media (min-width: 992px) {
+        .betterdocs-taxonomy-wrapper:not(.betterdocs-fluid-wrapper) .betterdocs-content-wrapper .betterdocs-sidebar {
+            width: 350px !important;
+        }
+    }
 
     .betterdocs-searchbox-k3brido .betterdocs-search-modal-layout-1 .betterdocs-search-layout-1 .search-bar .search-input-wrapper .search-icon path,
     .betterdocs-searchbox-k3brido .betterdocs-search-modal-archive .betterdocs-live-search .betterdocs-searchform .betterdocs-searchform-input-wrap svg path,
@@ -496,4 +506,66 @@
     .betterdocs-searchbox-k3brido.betterdocs-search-form-wrapper .betterdocs-searchform svg.docs-search-icon path {
         fill: #ffffff !important;
     }
+
 }
+
+.is-style-two-column-style,
+.is-style-three-column-style {
+    table {
+        border-collapse: collapse;
+        border: none;
+        table-layout: auto !important;
+
+        thead {
+            background: #333;
+
+            tr th {
+                color: #fff;
+                font-weight: bold;
+                padding: 7px 10px;
+                font-size: 17px;
+                border: 1px solid #333;
+
+                &:not(:last-child) {
+                    border-right-color: #6a6a6a !important;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                td {
+                    padding: 14px 20px;
+                    font-size: 15px;
+                    color: #555;
+                    vertical-align: top;
+                    border: 1px solid #dddddd;
+
+                    &:first-child {
+                        background: #f7f7f7;
+                        font-weight: 700;
+                        color: #333;
+                        width: 1%;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.is-style-three-column-style {
+    tbody {
+        tr {
+            td:nth-child(even) {
+                background-color: #fff8f8;
+            }
+        }
+    }
+}
+

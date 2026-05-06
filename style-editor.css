@@ -447,3 +447,42 @@ div[data-type="core/button"] {
 .has-radius-docs-white-background-color {
 	background-color: #ffffff !important;
 }
+
+/*Table Style*/
+.is-style-two-column-style table, .is-style-three-column-style table {
+	border-collapse: collapse;
+	border: none;
+}
+.is-style-two-column-style table thead, .is-style-three-column-style table thead {
+	background: #333;
+}
+.is-style-two-column-style table thead tr th, .is-style-three-column-style table thead tr th {
+	color: #fff;
+	font-weight: bold;
+	padding: 7px 10px;
+	font-size: 17px;
+	border: 1px solid #333;
+}
+.is-style-two-column-style table thead tr th:not(:last-child), .is-style-three-column-style table thead tr th:not(:last-child) {
+	border-right-color: #6a6a6a !important;
+}
+.is-style-two-column-style table tbody tr:last-child, .is-style-three-column-style table tbody tr:last-child {
+	border-bottom: none;
+}
+.is-style-two-column-style table tbody tr td, .is-style-three-column-style table tbody tr td {
+	padding: 14px 20px;
+	font-size: 15px;
+	color: #555;
+	vertical-align: top;
+	border: 1px solid #ddd;
+}
+.is-style-two-column-style table tbody tr td:first-child, .is-style-three-column-style table tbody tr td:first-child {
+	background: #f7f7f7;
+	font-weight: 700;
+	color: #333;
+	width: 1%;
+	white-space: nowrap;
+}
+.is-style-three-column-style tbody tr td:nth-child(even) {
+	background-color: #fff8f8;
+}
