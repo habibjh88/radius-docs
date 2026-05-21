@@ -32,10 +32,10 @@ body {
 }
 
 :root {
-  --radius-docs-body-font: "Inter", sans-serif;
+  --radius-docs-body-font: 'Inter', sans-serif;
   --radius-docs-body-fs: 15px;
-  --radius-docs-heading-font: "Roboto", sans-serif;
-  --radius-docs-menu-font: "Inter", sans-serif;
+  --radius-docs-heading-font: 'Roboto', sans-serif;
+  --radius-docs-menu-font: 'Inter', sans-serif;
 }
 
 body {
